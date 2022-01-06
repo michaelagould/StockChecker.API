@@ -9,9 +9,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-var connection =
-@"Server=.;Database=StockCheckerDB;Trusted_Connection=True;ConnectRetryCount=0";
+var connection = @"Server=.;Database=StockCheckerDB;Trusted_Connection=True;ConnectRetryCount=0";
 builder.Services.AddDbContext<StockContext>(options => options.UseSqlServer(connection));
+//builder.Services.AddTransient<DbContext, StockContext>();
 
 
 var app = builder.Build();

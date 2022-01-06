@@ -7,5 +7,6 @@ namespace StockChecker.API.Database
     {
         public StockContext(DbContextOptions<StockContext> options) : base(options) { }
         public DbSet<Product> Products { get; set; }
+
     }
 }
