@@ -6,20 +6,31 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace StockChecker.UWP.ViewModels
 {
     public class LoginViewModel : INotifyPropertyChanged
     {
-        public LoginViewModel()
+        private IHttpStockClientHelper _httpStockClientHelper;
+        public LoginViewModel(IHttpStockClientHelper httpStockClientHelper)
         {
+            _httpStockClientHelper = httpStockClientHelper;
             LoginCommand = new RelayCommand(() => DoLogin());
         }
 
-        private void DoLogin()
+        private async void DoLogin()
         {
-            throw new NotImplementedException();
+            bool loggedIn = await _httpStockClientHelper.Login(Username, Password);
+            if (loggedIn)
+            {
+                var frame = Window.Current.Content as Frame;
+                frame.Navigate(typeof(MainPage), null);
+            }
         }
+
+        
 
         public RelayCommand LoginCommand { get; set; }
 

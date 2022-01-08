@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IdentityModel.Client;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -11,10 +12,33 @@ namespace StockChecker.UWP.Helpers
     public class HttpClientHelper : IHttpStockClientHelper
     {
         static HttpClient _httpClient;
+        private static string _accessToken;
         public HttpClientHelper(Uri baseAddress)
         {
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = baseAddress;
+        }
+        public async Task<bool> Login(string username, string password)
+        {
+            var disco = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
+            {
+                Address = "https://localhost:5001"
+            });
+            var response = await _httpClient.RequestPasswordTokenAsync(new PasswordTokenRequest
+            {
+                Address = disco.TokenEndpoint,
+                ClientId = "StockChecker",
+                ClientSecret = "secret",
+                Scope = "StockCheckerApi",
+                UserName = username,
+                Password = password
+            });
+            if(response.IsError)
+            {
+                //Log Error
+                return false;
+            }
+            return true;
         }
         public async Task<int> GetQuantityAsync(int productId)
         {
@@ -22,6 +46,9 @@ namespace StockChecker.UWP.Helpers
             string quantityString = await _httpClient.GetStringAsync(path);
             return int.Parse(quantityString);
         }
+
+        
+
         public async Task UpdateQuantityAsync(int productId, int newQuantity)
         {
             string path = $"api/stock/{productId}";
