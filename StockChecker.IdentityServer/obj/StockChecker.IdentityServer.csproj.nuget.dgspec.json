@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\StockChecker.API\\StockChecker.API\\StockChecker.API.csproj": {}
+    "C:\\Projects\\StockChecker.API\\StockChecker.IdentityServer\\StockChecker.IdentityServer.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\StockChecker.API\\StockChecker.API\\StockChecker.API.csproj": {
+    "C:\\Projects\\StockChecker.API\\StockChecker.IdentityServer\\StockChecker.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\StockChecker.API\\StockChecker.API\\StockChecker.API.csproj",
-        "projectName": "StockChecker.API",
-        "projectPath": "C:\\Projects\\StockChecker.API\\StockChecker.API\\StockChecker.API.csproj",
+        "projectUniqueName": "C:\\Projects\\StockChecker.API\\StockChecker.IdentityServer\\StockChecker.IdentityServer.csproj",
+        "projectName": "StockChecker.IdentityServer",
+        "projectPath": "C:\\Projects\\StockChecker.API\\StockChecker.IdentityServer\\StockChecker.IdentityServer.csproj",
         "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\StockChecker.API\\StockChecker.API\\obj\\",
+        "outputPath": "C:\\Projects\\StockChecker.API\\StockChecker.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -47,23 +47,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "IdentityServer4.AccessTokenValidation": {
+            "IdentityServer4": {
               "target": "Package",
-              "version": "[3.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.1.5, )"
+              "version": "[4.1.2, )"
             }
           },
           "imports": [
