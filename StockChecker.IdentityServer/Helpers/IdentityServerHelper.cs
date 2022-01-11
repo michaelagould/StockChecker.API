@@ -1,4 +1,5 @@
 ﻿using IdentityModel;
+using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;
 using System.Security.Claims;
@@ -19,7 +20,12 @@ namespace StockChecker.IdentityServer.Helpers
                     {
                         new Secret("secret".Sha256())
                     },
-                    AllowedScopes = { "StockCheckerApi" }
+                    AllowedScopes = 
+                    { 
+                        "StockCheckerApi",
+                        "roles",
+                        IdentityServerConstants.StandardScopes.OpenId
+                    }
                 }
             };
             return clients;
@@ -71,5 +77,19 @@ namespace StockChecker.IdentityServer.Helpers
             };
             return resources;
         }
+
+        internal static IEnumerable<IdentityResource> GetIdentityResources()
+        {
+            return new List<IdentityResource>
+            {
+                new IdentityResource
+                {
+                    Name = "roles",
+                    UserClaims = new List<string>() { JwtClaimTypes.Role }
+                },
+                new IdentityResources.OpenId()
+            };
+        }
+
     }
 }

@@ -23,7 +23,7 @@ builder.Services.AddIdentityServer()
     .AddInMemoryClients(IdentityServerHelper.GetClients())
     .AddInMemoryApiScopes(IdentityServerHelper.GetApiResources())
     .AddTestUsers(IdentityServerHelper.GetUsers())
-    .AddInMemoryIdentityResources(new List<IdentityResource>());
+    .AddInMemoryIdentityResources(IdentityServerHelper.GetIdentityResources());
 
 var app = builder.Build();
 
