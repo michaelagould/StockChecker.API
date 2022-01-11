@@ -43,6 +43,7 @@ namespace StockChecker.UWP.Helpers
         public async Task<int> GetQuantityAsync(int productId)
         {
             string path = $"api/stock/{productId}";
+            _httpClient.SetBearerToken(_accessToken);
             string quantityString = await _httpClient.GetStringAsync(path);
             return int.Parse(quantityString);
         }
@@ -52,6 +53,7 @@ namespace StockChecker.UWP.Helpers
         public async Task UpdateQuantityAsync(int productId, int newQuantity)
         {
             string path = $"api/stock/{productId}";
+            _httpClient.SetBearerToken(_accessToken);
             var httpContent = new StringContent(newQuantity.ToString());
             httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             await _httpClient.PutAsync(path, httpContent);
