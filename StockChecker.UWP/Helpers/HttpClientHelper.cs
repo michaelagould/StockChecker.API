@@ -38,6 +38,7 @@ namespace StockChecker.UWP.Helpers
                 //Log Error
                 return false;
             }
+            _accessToken = response.AccessToken;
             return true;
         }
         public async Task<int> GetQuantityAsync(int productId)

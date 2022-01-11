@@ -1,5 +1,7 @@
-﻿using IdentityServer4.Models;
+﻿using IdentityModel;
+using IdentityServer4.Models;
 using IdentityServer4.Test;
+using System.Security.Claims;
 
 namespace StockChecker.IdentityServer.Helpers
 {
@@ -31,19 +33,31 @@ namespace StockChecker.IdentityServer.Helpers
                 {
                     SubjectId = "1",
                     Username = "Lucy",
-                    Password = "password123"
+                    Password = "password123",
+                    Claims = new List<Claim>()
+                    {
+                        new Claim(JwtClaimTypes.Role, "Sales")
+                    }
                 },
                 new TestUser
                 {
                     SubjectId = "2",
                     Username = "Morris",
-                    Password = "password123"
+                    Password = "password123",
+                    Claims = new List<Claim>()
+                    {
+                        new Claim(JwtClaimTypes.Role, "Maintenance")
+                    }
                 },
                 new TestUser
                 {
                     SubjectId = "3",
                     Username = "Graham",
-                    Password = "password123"
+                    Password = "password123",
+                    Claims = new List<Claim>()
+                    {
+                        new Claim(JwtClaimTypes.Role, "Administrator")
+                    }
                 }
             };
             return users;
