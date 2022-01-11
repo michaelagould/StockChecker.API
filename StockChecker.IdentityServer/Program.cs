@@ -1,4 +1,6 @@
 using IdentityServer4.Models;
+using Microsoft.Extensions.DependencyInjection;
+using StockChecker.IdentityServer.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,7 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddIdentityServer()
     .AddDeveloperSigningCredential()
-    .AddInMemoryClients(new List<Client>())
+    .AddInMemoryClients(IdentityServerHelper.GetClients())
+    .AddInMemoryApiScopes(IdentityServerHelper.GetApiResources())
+    .AddTestUsers(IdentityServerHelper.GetUsers())
     .AddInMemoryIdentityResources(new List<IdentityResource>());
 
 var app = builder.Build();

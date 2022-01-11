@@ -32,7 +32,6 @@ C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\Views\LoginView.xbf
 C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\Views\MainPage.xbf
 C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\XamlSaveStateFile.xml
 C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\StockChecker.UWP.csproj.CoreCompileInputs.cache
-C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\StockChecker.UWP.csproj.CopyComplete
 C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\StockChecker.UWP.exe
 C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\StockChecker.UWP.pdb
 C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\ResourceHandlingTask.state
@@ -55,3 +54,8 @@ C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\qualifiers.txt.inter
 C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\ProjectArchitectures.txt
 C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424959200000000.json
+C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\StockChecker.UWP.csproj.AssemblyReference.cache
+C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\FxResources.Microsoft.Extensions.DependencyInjection.SR.resw
+C:\Projects\StockChecker.API\StockChecker.UWP\obj\x64\Debug\FxResources.Microsoft.Extensions.DependencyInjection.Abstractions.SR.resw

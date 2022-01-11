@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
     .AddIdentityServerAuthentication(options =>
     {
-        options.Authority = "https://localhost:5001";
+        options.Authority = "https://localhost:7111";
         options.ApiName = "StockCheckerApi";
     });
 builder.Services.AddEndpointsApiExplorer();

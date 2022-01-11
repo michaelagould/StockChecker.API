@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.Extensions.DependencyInjection;
+using StockChecker.UWP.Helpers;
 
 namespace StockChecker.UWP
 {
@@ -31,7 +33,18 @@ namespace StockChecker.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            //Container = ConfigureDependencyInjection();
         }
+        //public IServiceProvider Container { get; }
+
+        //IServiceProvider ConfigureDependencyInjection()
+        //{
+        //    var serviceCollection = new ServiceCollection();
+
+        //    serviceCollection.AddTransient<IHttpStockClientHelper, HttpClientHelper>();
+
+        //    return serviceCollection.BuildServiceProvider();
+        //}
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

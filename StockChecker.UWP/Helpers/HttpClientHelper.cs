@@ -22,7 +22,7 @@ namespace StockChecker.UWP.Helpers
         {
             var disco = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
             {
-                Address = "https://localhost:5001"
+                Address = "https://localhost:7137"
             });
             var response = await _httpClient.RequestPasswordTokenAsync(new PasswordTokenRequest
             {

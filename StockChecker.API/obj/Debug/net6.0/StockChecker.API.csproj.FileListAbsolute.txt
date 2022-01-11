@@ -70,8 +70,8 @@ C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\StockChecker.API.
 C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\staticwebassets.build.json
 C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\staticwebassets.development.json
 C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\scopedcss\bundle\StockChecker.API.styles.css
-C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\StockChecker.API.csproj.CopyComplete
 C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\StockChecker.API.dll
 C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\ref\StockChecker.API.dll
 C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\StockChecker.API.pdb
 C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\StockChecker.API.genruntimeconfig.cache
+C:\Projects\StockChecker.API\StockChecker.API\obj\Debug\net6.0\StockChecker.API.csproj.AssemblyReference.cache

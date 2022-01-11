@@ -1,4 +1,5 @@
-﻿using StockChecker.UWP.ViewModels;
+﻿using StockChecker.UWP.Helpers;
+using StockChecker.UWP.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,9 +24,11 @@ namespace StockChecker.UWP.Views
     /// </summary>
     public sealed partial class LoginView : Page
     {
+        //public LoginView(IHttpStockClientHelper httpStockClientHelper)
         public LoginView()
         {
             this.InitializeComponent();
+            //ViewModel = new LoginViewModel(httpStockClientHelper);
             ViewModel = new LoginViewModel();
             DataContext = ViewModel;
         }

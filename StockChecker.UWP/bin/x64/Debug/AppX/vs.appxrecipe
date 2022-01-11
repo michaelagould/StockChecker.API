@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>65255B2D18FD2C418F34454CABC9EA1B8E9E1423F0B15FB5C06FEA680ED10397</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>DB0339E225A6557AF7ED3583B440A6ABEEBFCEE2F25B1545C1A713F0D80CA2F9</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2b2c63b7-cd5b-4a7d-9990-459c71bf62c8_1.0.0.0_x64__3pn73vjv4a5p4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2b2c63b7-cd5b-4a7d-9990-459c71bf62c8_3pn73vjv4a5p4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2b2c63b7-cd5b-4a7d-9990-459c71bf62c8</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-08T21:58:08.213</Modified>
+      <Modified>2022-01-11T03:31:23.743</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\StockChecker.UWP.exe">
       <PackagePath>entrypoint\StockChecker.UWP.exe</PackagePath>
-      <Modified>2022-01-08T21:58:07.638</Modified>
+      <Modified>2022-01-11T03:31:23.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\identitymodel\6.0.0\lib\netstandard2.0\IdentityModel.dll">
       <PackagePath>IdentityModel.dll</PackagePath>
@@ -45,6 +45,14 @@
     <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
       <Modified>2021-10-22T23:42:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\microsoft.extensions.dependencyinjection\6.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.dll</PackagePath>
+      <Modified>2021-10-22T23:48:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\6.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+      <Modified>2021-10-22T23:48:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -110,15 +118,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-01-08T21:58:07.213</Modified>
+      <Modified>2022-01-11T03:31:23.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\Views\LoginView.xbf">
       <PackagePath>Views\LoginView.xbf</PackagePath>
-      <Modified>2022-01-08T21:58:07.213</Modified>
+      <Modified>2022-01-11T03:31:23.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2022-01-08T21:58:07.213</Modified>
+      <Modified>2022-01-11T03:31:23.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -126,11 +134,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-01-08T21:58:07.733</Modified>
+      <Modified>2022-01-09T00:23:49.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\StockChecker.API\StockChecker.UWP\bin\x64\Debug\Core\StockChecker.UWP.exe">
       <PackagePath>StockChecker.UWP.exe</PackagePath>
-      <Modified>2022-01-08T21:58:08.209</Modified>
+      <Modified>2022-01-11T03:31:23.741</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

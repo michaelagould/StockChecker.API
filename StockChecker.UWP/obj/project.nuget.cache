@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "aVkI2TtBL/5wpme/XvQ/D79Ywitkp2TpPn3c6dQXcmAxglwSh/TwBpDcP9csZvOG/VcuEFHI5SzZQ3fW8j3+Uw==",
+  "dgSpecHash": "FR17t5o+iTeDgiJC+n7izwlO6PhmNxIOeSRK+FB74ghx/cpxeNhGiHNbEq3E/95E3hzObGN+MqNyfqNjIgHZRQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\StockChecker.API\\StockChecker.UWP\\StockChecker.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\micha\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
